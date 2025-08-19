@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background: url('https://www.usgs.gov/media/images/conducting-fieldwork') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Services & Projects */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.service-container, .project-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service, .project {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.service img, .project img, .gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 30%;
+  margin: 10px 0;
+}
+
+/* Contact */
+#contact {
+  background: #333;
+  color: white;
+  padding: 50px 20px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
