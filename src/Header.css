@@ -43,19 +43,50 @@ header nav ul li a:hover {
   color: #f39c12; /* orange on hover */
 }
 
-/* Responsive for mobile */
+/* Hamburger menu button (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Responsive for tablets & mobile */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
     padding: 15px 20px;
+  }
+
+  /* Hide menu by default */
+  header nav {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Show nav when active */
+  header nav.active {
+    display: block;
+    margin-top: 10px;
   }
 
   header nav ul {
     flex-direction: column;
-    width: 100%;
   }
 
   header nav ul li {
-    margin: 10px 0;
+    margin: 12px 0;
+  }
+
+  /* Show hamburger button */
+  .hamburger {
+    display: flex;
   }
 }
