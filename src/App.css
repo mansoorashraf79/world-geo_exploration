@@ -99,3 +99,42 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+/* ========================= */
+/* 📱 Mobile Responsive Fix  */
+/* ========================= */
+@media (max-width: 768px) {
+  /* Header becomes stacked */
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Hero text smaller */
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  /* Services & Projects */
+  .service, .project {
+    width: 90%;
+  }
+
+  /* Gallery */
+  .gallery img {
+    width: 90%;
+  }
+}
