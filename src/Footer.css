@@ -6,6 +6,9 @@ footer {
   text-align: center;
   font-size: 16px;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Footer links */
@@ -13,6 +16,8 @@ footer a {
   color: #f39c12; /* orange */
   text-decoration: none;
   transition: color 0.3s;
+  margin: 0 8px;
+  display: inline-block;
 }
 
 footer a:hover {
@@ -22,12 +27,38 @@ footer a:hover {
 /* Footer paragraphs */
 footer p {
   margin: 5px 0;
+  line-height: 1.6;
 }
 
-/* Responsive */
+/* Responsive for tablets */
+@media (max-width: 1024px) {
+  footer {
+    font-size: 15px;
+    padding: 35px 18px;
+  }
+}
+
+/* Responsive for mobile */
 @media (max-width: 768px) {
   footer {
     font-size: 14px;
     padding: 30px 15px;
+  }
+
+  footer p {
+    margin: 8px 0;
+  }
+
+  footer a {
+    display: block; /* links stack on mobile */
+    margin: 5px 0;
+  }
+}
+
+/* Extra small devices (phones <480px) */
+@media (max-width: 480px) {
+  footer {
+    font-size: 13px;
+    padding: 25px 10px;
   }
 }
